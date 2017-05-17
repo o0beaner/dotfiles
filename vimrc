@@ -116,3 +116,4 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+let g:session_autosave = 'yes'
