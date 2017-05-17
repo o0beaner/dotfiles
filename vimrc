@@ -117,7 +117,3 @@ set smartcase       " ...unless we type a capital
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
 " Persist the options of the session plug-in using the session plug-in...
-let g:session_persist_globals = ['&sessionoptions']
-call add(g:session_persist_globals, 'g:session_autoload')
-call add(g:session_persist_globals, 'g:session_autosave')
-let g:session_autosave = 'no'
