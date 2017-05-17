@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -116,4 +116,7 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
-let g:session_autosave = 'yes'
+" Persist the options of the session plug-in using the session plug-in...
+let g:session_persist_globals = ['&sessionoptions']
+call add(g:session_persist_globals, 'g:session_autoload')
+call add(g:session_persist_globals, 'g:session_autosave')
