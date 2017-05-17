@@ -120,3 +120,4 @@ so ~/.yadr/vim/settings.vim
 let g:session_persist_globals = ['&sessionoptions']
 call add(g:session_persist_globals, 'g:session_autoload')
 call add(g:session_persist_globals, 'g:session_autosave')
+let g:session_autosave = 'no'
