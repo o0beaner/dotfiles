@@ -1,6 +1,5 @@
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
-let g:session_autosave = 'yes'
 
 for fpath in split(globpath(vimsettings, '*.vim'), '\n')
 
