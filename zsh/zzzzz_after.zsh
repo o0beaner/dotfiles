@@ -2,7 +2,7 @@ bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
 if [[ "$platform" == 'linux' ]]; then
-  source "/usr/share/zsh/site-functions/aws_zsh_completer.sh"
+  source "/usr/local/bin/aws_zsh_completer.sh"
 fi
 
 if [[ "$platform" == 'darwin' ]]; then
