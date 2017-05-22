@@ -22,4 +22,6 @@ alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias sshgen='~/.ssh/config_gen'
 alias emrssh='aws emr ssh --cluster-id'
 alias emrsshg='aws emr ssh --endpoint-url http://aws157-preprod-sa-east-1.gru.proxy.amazon.com --region sa-east-1 --cluster-id'
-export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
+export PATH=$PATH:/usr/local/bin:/opt/local/heirloom/bin:/opt/local/bin  # MIDWAY PATH: Path changed for ssh
+
+prompt agnoster
