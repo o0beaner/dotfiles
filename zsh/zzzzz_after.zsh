@@ -1,14 +1,15 @@
 bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
-if [[ -e /usr/local/bin/aws_zsh_completer ]]; then
+if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
   source "/usr/local/bin/aws_zsh_completer.sh"
 fi
 
-if [[ -e /usr/bin/aws_zsh_completer ]]; then
+if [ -e "/usr/bin/aws_zsh_completer.sh" ]; then
   source "/usr/bin/aws_zsh_completer.sh"
 fi
 
+alias vi=vim
 alias sudo='sudo -E'
 alias ll="ls -lah"
 alias zrc="vi ~/.zshrc"
