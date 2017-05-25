@@ -1,12 +1,12 @@
 bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
-if [[ "$platform" == 'linux' ]]; then
+if [[ -e /usr/local/bin/aws_zsh_completer ]]; then
   source "/usr/local/bin/aws_zsh_completer.sh"
 fi
 
-if [[ "$platform" == 'darwin' ]]; then
-  source "/usr/local/bin/aws_zsh_completer.sh"
+if [[ -e /usr/bin/aws_zsh_completer ]]; then
+  source "/usr/bin/aws_zsh_completer.sh"
 fi
 
 alias sudo='sudo -E'
@@ -23,3 +23,4 @@ alias sshgen='~/.ssh/config_gen'
 alias emrssh='aws emr ssh --cluster-id'
 alias emrsshg='aws emr ssh --endpoint-url http://aws157-preprod-sa-east-1.gru.proxy.amazon.com --region sa-east-1 --cluster-id'
 export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
+export LC_ALL=en_US.UTF-8
