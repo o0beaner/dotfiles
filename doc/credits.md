@@ -23,4 +23,8 @@ Yadr is made possible by many awesome people, too many to list :) But here are a
  * Cleanup, auto installer: @[kylewest](https://github.com/kylewest)
  * Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
  * Vundle migration: @[duhanebel](https://github.com/duhanebel)
+<<<<<<< HEAD
 
+=======
+ * Docker support: @[lfilho](https://github.com/lfilho)
+>>>>>>> upstream/master

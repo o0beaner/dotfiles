@@ -172,8 +172,13 @@ def install_homebrew
   puts "======================================================"
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
+<<<<<<< HEAD
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi hub}
   run %{brew install vim --with-lua --with-luajit --with-client-server}
+=======
+  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi}
+  run %{brew install macvim --with-override-system-vim --with-lua --with-luajit}
+>>>>>>> upstream/master
   puts
   puts
 end
@@ -274,7 +279,11 @@ def install_prezto
   run %{ mkdir -p $HOME/.zsh.after }
   run %{ mkdir -p $HOME/.zsh.prompts }
 
+<<<<<<< HEAD
   if ENV["SHELL"].include? 'zsh' then
+=======
+  if "#{ENV['SHELL']}".include? 'zsh' then
+>>>>>>> upstream/master
     puts "Zsh is already configured as your shell of choice. Restart your session to load the new settings"
   else
     puts "Setting zsh as your default shell"
