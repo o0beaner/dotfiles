@@ -173,8 +173,13 @@ def install_homebrew
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
 <<<<<<< HEAD
+<<<<<<< HEAD
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi hub}
   run %{brew install vim --with-lua --with-luajit --with-client-server}
+=======
+  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi}
+  run %{brew install macvim --with-override-system-vim --with-lua --with-luajit}
+>>>>>>> upstream/master
 =======
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher ghi}
   run %{brew install macvim --with-override-system-vim --with-lua --with-luajit}
@@ -280,7 +285,11 @@ def install_prezto
   run %{ mkdir -p $HOME/.zsh.prompts }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   if ENV["SHELL"].include? 'zsh' then
+=======
+  if "#{ENV['SHELL']}".include? 'zsh' then
+>>>>>>> upstream/master
 =======
   if "#{ENV['SHELL']}".include? 'zsh' then
 >>>>>>> upstream/master

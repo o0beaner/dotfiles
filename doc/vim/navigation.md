@@ -5,7 +5,11 @@
 * CtrlP - <kbd>,</kbd> <kbd>t</kbd> to find a file
 * Visual-star-search - make the <kbd>*</kbd> (star) search in visual mode behave like expected: searching for the whole selection instead of just the word under the cursor.
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Ag - super fast search by Silver Searcher. hit <kbd>K</kbd> to grep current word
+=======
+* Ag - super fast search by Silver Searcher. hit <kbd>,K</kbd> to grep current word
+>>>>>>> upstream/master
 =======
 * Ag - super fast search by Silver Searcher. hit <kbd>,K</kbd> to grep current word
 >>>>>>> upstream/master

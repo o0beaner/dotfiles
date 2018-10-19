@@ -4,7 +4,4 @@ Bundle "ctrlpvim/ctrlp.vim"
 Bundle 'JazzCore/ctrlp-cmatcher'
 Bundle 'junegunn/fzf'
 Bundle "xolox/vim-misc"
-<<<<<<< HEAD
-=======
 Bundle "xolox/vim-session"
->>>>>>> upstream/master

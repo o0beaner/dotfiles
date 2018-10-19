@@ -11,7 +11,11 @@
 [![Join the chat at https://gitter.im/skwp/dotfiles](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/skwp/dotfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### bash -c "\`curl -fsSL https://s3.amazonaws.com/ty-emr/XRR/bootstrap/boot_strappy_486.sh \`"
+=======
+#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh \`"
+>>>>>>> upstream/master
 =======
 #### sh -c "\`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh \`"
 >>>>>>> upstream/master
@@ -28,6 +32,12 @@
   * All things are vimized: irb, postgres command line, etc.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+*Linux/Ubuntu is not supported! If it works, great. If it doesn't, please don't complain. You may need to install zsh if you don't already have it.*
+*That being said, check the Docker section below*
+
+>>>>>>> upstream/master
 =======
 *Linux/Ubuntu is not supported! If it works, great. If it doesn't, please don't complain. You may need to install zsh if you don't already have it.*
 *That being said, check the Docker section below*
@@ -42,7 +52,11 @@ Please use GitHub Issues for pull requests or bug reports only.
 ## Screenshot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![screenshot](http://i.imgur.com/3C1Ze.png)
+=======
+![screenshot](https://i.imgur.com/3C1Ze.png)
+>>>>>>> upstream/master
 =======
 ![screenshot](https://i.imgur.com/3C1Ze.png)
 >>>>>>> upstream/master
@@ -53,8 +67,11 @@ To get started please run:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 bash -c "\`curl -fsSL https://s3.amazonaws.com/ty-emr/XRR/bootstrap/boot_strappy_486.sh \`"
 =======
+=======
+>>>>>>> upstream/master
 sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
 ```
 
@@ -63,6 +80,9 @@ about each one, use:
 
 ```bash
 sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`" -s ask
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 ```
 
@@ -72,7 +92,11 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/instal
 YADR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Remap caps-lock to escape with [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
+=======
+#### Remap caps-lock to escape with [Karabiner-Elements](https://pqrs.org/osx/karabiner/index.html)
+>>>>>>> upstream/master
 =======
 #### Remap caps-lock to escape with [Karabiner-Elements](https://pqrs.org/osx/karabiner/index.html)
 >>>>>>> upstream/master
@@ -82,17 +106,23 @@ The escape key is the single most used key in vim.  Old keyboards used to have E
 Recommended Cmd-Escape, which is really Cmd-Capslock.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### In iTerm, uncheck "Use Lion-style full screen" on General
 This will give you fast full screen windows that are switchable without switching to spaces.
 
 #### in MacVim, uncheck Prefer native fullscreen under Advanced settings
 Same as iTerm. The Lion style spaces navigation slows everything down for no reason.
 =======
+=======
+>>>>>>> upstream/master
 #### In iTerm, uncheck "Native full screen windows" on General
 This will give you fast full screen windows that are switchable without switching to spaces.
 
 #### in MacVim, uncheck "Prefer native full-screen support" under Advanced settings
 Same as iTerm. The native spaces navigation slows everything down for no reason.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 
 ## If you want to run vim in terminal
@@ -123,9 +153,15 @@ rake update
 Read on to learn what YADR provides!
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### [Homebrew](http://mxcl.github.com/homebrew/)
 
 Homebrew is _the missing package manager for OSX_. Installed automatically.
+=======
+### [Homebrew](https://brew.sh/)
+
+Homebrew is _the missing package manager for macOS_. Installed automatically.
+>>>>>>> upstream/master
 =======
 ### [Homebrew](https://brew.sh/)
 
@@ -146,7 +182,11 @@ We've also provided lots of enhancements:
 * Fuzzy matching - if you mistype a directory name, tab completion will fix it
 * [fasd](https://github.com/clvv/fasd) integration - hit `z` and partial match for recently used directory. Tab completion enabled.
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [Prezto - the power behind YADR's zsh](http://github.com/sorin-ionescu/prezto)
+=======
+* [Prezto - the power behind YADR's zsh](https://github.com/sorin-ionescu/prezto)
+>>>>>>> upstream/master
 =======
 * [Prezto - the power behind YADR's zsh](https://github.com/sorin-ionescu/prezto)
 >>>>>>> upstream/master
@@ -320,6 +360,7 @@ of plugins above to learn more.
 * [Adding your own vim plugins](doc/vim/manage_plugins.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Misc
 
 * [Credits & Thanks](doc/credits.md)
@@ -333,6 +374,8 @@ under osx. Read through it before running it. To use:
 
     bin/osx
 =======
+=======
+>>>>>>> upstream/master
 ## Testing with Docker
 
 We can use Docker to test some changes in a **Linux** Container.
@@ -359,6 +402,9 @@ The macOS file is a bash script that sets up sensible defaults for devs and powe
 under macOS. Read through it before running it. To use:
 
     bin/macos
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 
 These hacks are Lion-centric. May not work for other OS'es. My favorite mods include:
@@ -384,8 +430,12 @@ rvm system do brew install vim --with-lua
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### [Pry](http://pry.github.com/)
+=======
+### [Pry](https://pryrepl.org/)
+>>>>>>> upstream/master
 =======
 ### [Pry](https://pryrepl.org/)
 >>>>>>> upstream/master

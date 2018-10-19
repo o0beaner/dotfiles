@@ -50,11 +50,7 @@ set nowb
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
-<<<<<<< HEAD
-if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
-=======
 if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
->>>>>>> upstream/master
   silent !mkdir ~/.vim/backups > /dev/null 2>&1
   set undodir=~/.vim/backups
   set undofile
@@ -104,10 +100,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-<<<<<<< HEAD
-"
-=======
->>>>>>> upstream/master
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
@@ -123,7 +115,4 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
-<<<<<<< HEAD
 " Persist the options of the session plug-in using the session plug-in...
-=======
->>>>>>> upstream/master
