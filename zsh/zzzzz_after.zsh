@@ -27,7 +27,7 @@ alias sift='sift --follow'
 alias ss="sudo ss -n4p | sed -Ee 's/users:\(\(//g' -e 's/\"//g' -e 's/pid=([0-9]+).+/\1/g'| column -t"
 alias sst="sudo ss -tn4p | sed -Ee 's/users:\(\(//g' -e 's/\"//g' -e 's/pid=([0-9]+).+/\1/g'| column -t"
 alias ssu="sudo ss -un4p | sed -Ee 's/users:\(\(//g' -e 's/\"//g' -e 's/pid=([0-9]+).+/\1/g'| column -t"
-alias ssl="sudo ss -tuln4p | sed -Ee 's/users:\(\(//g' -e 's/\"//g' -e 's/pid=([0-9]+).+/\1/g'| column -t"
+alias ssl="sudo ss -tulpn4 | awk '{if(NR>1)print \$1,\$2,\$3,\$4,\$5,\$7}' |  sed -Ee 's/users:\(\(//g' -e 's/\"//g' -e 's/pid=([0-9]+).+/\1/g'| column -t"
 alias ps='ps waux'
 alias grep='sift'
 function lsapp() {
